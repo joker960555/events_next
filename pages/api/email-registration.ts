@@ -28,7 +28,9 @@ const extractData = (filePath: string | Buffer | URL): EventsData => {
 };
 
 const writeData = (filePath: string | Buffer | URL, data: EventsData) => {
-	fs.writeFileSync(filePath, JSON.stringify(data));
+	fs.writeFileSync(filePath, JSON.stringify(data), {
+		mode: process.env.DATA_DIR_PERMISSIONS,
+	});
 };
 
 const handler = (
