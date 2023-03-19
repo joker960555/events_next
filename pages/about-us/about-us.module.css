@@ -1,0 +1,11 @@
+.about_us {
+	@apply grid auto-rows-min gap-y-6;
+}
+
+.about_us_list {
+	@apply flex gap-10;
+}
+
+.about_us_list li {
+	@apply grid auto-rows-max gap-y-3;
+}

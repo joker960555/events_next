@@ -1,0 +1,63 @@
+.wrapper {
+	@apply mx-auto flex w-4/5 flex-col items-center gap-y-10 rounded-md bg-gradient-to-br from-slate-200 to-slate-400 py-8 shadow-lg;
+}
+
+.header {
+	@apply text-3xl font-extrabold drop-shadow-md;
+}
+
+.subheader {
+	@apply text-2xl font-extrabold uppercase leading-3;
+}
+
+.image {
+	@apply w-4/5 rounded-sm shadow-md;
+}
+
+.description {
+	@apply w-2/3;
+}
+
+.list {
+	@apply mx-40 grid max-h-screen max-w-max grid-cols-3 gap-x-5 gap-y-3 overflow-hidden;
+}
+
+.list_item {
+	@apply truncate;
+}
+
+.form {
+	@apply flex h-40 w-3/5 flex-col items-center gap-y-6;
+}
+
+.label {
+	@apply font-bold leading-4;
+}
+
+.input {
+	@apply h-1/2 w-1/2 rounded-md py-2 px-5 shadow-lg placeholder:text-center placeholder:italic;
+}
+
+.buttonWrapper {
+	@apply relative w-full;
+}
+
+.submitButton {
+	@apply visible mx-auto block rounded-lg border-2 border-slate-800 bg-slate-600 px-10 py-2 text-xl font-medium tracking-wider text-white opacity-100 shadow-lg transition-all hover:-translate-y-0.5 hover:translate-x-2 hover:scale-105 hover:shadow-xl active:translate-y-0.5 active:shadow-md;
+}
+
+.hidden {
+	@apply invisible opacity-0;
+}
+
+.inputOnError {
+	@apply outline outline-red-600;
+}
+
+.error {
+	@apply visible absolute top-1/2 left-1/2 w-full -translate-y-1/2 -translate-x-1/2 text-center text-xl font-medium tracking-wider text-red-600 opacity-100 transition-all;
+}
+
+.registrationMessage {
+	@apply visible absolute top-1/2 left-1/2 w-full -translate-y-1/2 -translate-x-1/2 text-center text-xl font-medium tracking-wider text-gray-800 opacity-100 transition-all;
+}

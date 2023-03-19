@@ -1,0 +1,31 @@
+.homePage {
+	@apply grid auto-rows-auto grid-cols-1 gap-y-11;
+}
+
+.homePage {
+	@apply mx-auto max-w-5xl;
+}
+
+.card {
+	@apply flex h-56 flex-row content-center justify-start gap-x-5 rounded-sm transition-all hover:bg-slate-300 hover:brightness-95;
+}
+
+.card:nth-child(even) {
+	@apply flex-row-reverse;
+}
+
+.card .image {
+	@apply row-span-2 h-full w-full max-w-md rounded-sm object-cover drop-shadow-lg transition-all;
+}
+
+.card:hover .image {
+	@apply scale-105 rounded-md;
+}
+
+.card .textWrapper {
+	@apply inline-block h-full max-w-lg p-7;
+}
+
+/* .card .textWrapper .title {
+	@apply mb-4 font-mono text-lg font-semibold;
+} */

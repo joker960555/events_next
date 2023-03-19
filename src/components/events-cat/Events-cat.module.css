@@ -1,0 +1,43 @@
+/* .content {
+	@apply flex flex-col space-y-12;
+} */
+
+/* .content {
+	@apply flex flex-row flex-wrap;
+}
+
+.header {
+	@apply mx-auto inline-block text-center;
+} */
+
+.content {
+	@apply row-auto grid gap-y-16;
+}
+
+.header {
+	@apply mx-auto w-full text-center text-4xl font-extrabold;
+}
+
+.wrapper {
+	@apply mx-auto grid w-full grid-cols-3 gap-y-14;
+}
+
+.cat_wrapper {
+	@apply mx-auto grid h-112 w-5/6 grid-rows-6 rounded-lg bg-gradient-to-tr from-amber-100 to-amber-300 shadow-lg brightness-95 transition-all hover:translate-x-2 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:brightness-100;
+}
+
+.cat_title {
+	@apply row-start-1 w-2/3 content-center place-self-center text-center text-base font-semibold leading-5 drop-shadow;
+}
+
+.cat_image {
+	@apply row-start-2 row-end-6 mx-auto h-9/10 w-2/3 place-self-start rounded-md object-cover shadow-lg;
+}
+
+.cat_description {
+	@apply row-start-6 mx-auto w-2/3 place-content-start text-center text-sm;
+}
+
+.cat_description p {
+	@apply block leading-5 line-clamp-3;
+}

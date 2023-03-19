@@ -1,0 +1,23 @@
+header.header {
+	@apply flex h-52 flex-col justify-between bg-gradient-to-l from-green-200 to-green-50 p-6;
+}
+
+/* header.header h1 {
+	@apply text-2xl font-medium w-2/5 uppercase;
+} */
+
+.topNav {
+	@apply flex content-center justify-between;
+}
+
+.linksList {
+	@apply grid grid-cols-3 gap-1  no-underline drop-shadow-sm;
+}
+
+.linksList li {
+	@apply text-xl font-semibold transition-transform hover:scale-105 hover:drop-shadow;
+}
+
+.title {
+	@apply w-2/5;
+}

@@ -1,0 +1,19 @@
+.events_wrapper {
+	@apply m-11 grid auto-rows-auto grid-cols-3;
+}
+
+.event {
+	@apply relative mx-auto h-72 w-72;
+}
+
+.event_image {
+	@apply h-full w-full rounded-md bg-cover shadow-sm brightness-90 transition-all;
+}
+
+.event:hover .event_image {
+	@apply scale-105 rounded-lg shadow-lg brightness-75;
+}
+
+.event_header {
+	@apply absolute top-3/4 left-1/2 w-9/10 -translate-x-1/2 -translate-y-1/2 text-center font-sans text-4xl font-extrabold text-white drop-shadow;
+}

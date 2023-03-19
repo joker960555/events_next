@@ -1,0 +1,3 @@
+.footer {
+	@apply grid h-32 content-center bg-gray-800 text-center text-white;
+}
